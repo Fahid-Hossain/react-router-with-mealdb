@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Meals from './components/Meals/Meals';
 import NotFound from './components/NotFound/NotFound';
+import MealDetails from './components/MealDetails/MealDetails';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/meals">
              <Meals></Meals>
+          </Route>
+          <Route path="/meal/:MealId">
+              <MealDetails></MealDetails>
           </Route>
           <Route path="*">
              <NotFound></NotFound>
